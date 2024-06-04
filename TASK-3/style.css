@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+#container {
+    width: 50%;
+    height: 5%;
+    min-height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 0 0 7px 0 white;
+}
+
+#bar {
+    position: absolute;
+    top: 7px;
+    right: 30%;
+    bottom: 7px;
+    left: 7px;
+    background: linear-gradient(yellow, brown);
+    box-shadow: 0 0 7px 0 yellow;
+}
