@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+section#schedule {
+    max-width: 800px;
+    margin: auto;
+}
+
+#title {
+    margin: 25px 3px;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+h1.list-num {
+    color: grey;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 150px 1fr 100px;
+    margin-top: 10px;
+}
+
+.params {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.source, .timing {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 15px;
+    margin: 20px;
+    font-size: 80%;
+    font-weight: 600;
+    border: 2px solid;
+    border-radius: 7px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+button.add-source {
+    color: #4f91de;
+    border-color: #4f91de;
+}
+
+button.add-shedule-item {
+    color: #90ca9b;
+    border-color: #90ca9b;
+    margin-left: 150px;
+    
+}
+
+svg {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 80%;
+    color: #b5b8c7;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#time-input-container {
+    position: relative;
+}
+
+#time-input {
+    padding: 3px 10px;
+    font-size: 100%;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+
+#time-input-label {
+    font-size: 80%;
+    color: gray;
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    line-height: 100%;
+}
+
+.toggle {
+    display: flex;
+    align-items: middle;
+    gap: 5px;
+}
+
+.toggle-input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.toggle-view {
+    width: 40px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: lightgray;
+    position: relative;
+}
+
+.toggle-view::before {
+    content: "";
+    position:absolute;
+    top: 1px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+    transition: 250ms;
+}
+
+#toggle-input:checked  + .toggle-view::before {
+    transform: translate(20px);
+}
+
+#toggle-input:checked + .toggle-view {
+    background-color: #5981e2;
+}
