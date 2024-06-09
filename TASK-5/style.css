@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+:root {
+    --color-dark: #000000;
+    --color-emphasis: #EE0000;
+
+    --color-light: white;
+    --color-light-grey: #787878;
+    --color-dark-grey: #464646;
+    --color-background-grey: #F4F4F4;
+
+}
+
+body {
+    font: 500 18px 'Roboto', sans-serif;
+}
+
+h1 {
+    font: 700 50px 'Poppins', sans-serif;
+}
+
+h2 {
+    font: 700 24px 'Poppins', sans-serif;
+    line-height: 30px;
+}
+
+h3 {
+    font: 700 20px 'Poppins', sans-serif;
+    line-height: 25px;
+}
+
+h4 {
+    font: 500 16px 'Roboto', sans-serif;
+    line-height: 35px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+a:visited {
+    color: var(--color-light);
+}
+
+
+
+.emphasis {
+    color: var(--color-emphasis);
+}
+
+
+.logo {
+    width: 148px;
+    height: 63px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+    padding: 0 56px;
+    background-color: var(--color-dark);
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+li {
+    color: var(--color-light);
+    font: 500 18px 'Poppins', sans-serif;
+}
+
+.slogan-section {
+    padding: 25px;
+}
+
+.slogan {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 68px;
+    padding-right: 60%;
+    background: linear-gradient(90deg, var(--color-dark) 25%, transparent), url('images/v1_3.png');
+    background-size: cover;
+    height: 600px;
+    border-radius: 10px;
+    font: 700 70px 'Poppins', sans-serif;
+    line-height: 70px; 
+    overflow: hidden;
+    color: var(--color-light); 
+}
+
+.experience-section {
+    padding: 70px 100px;
+}
+.experience_header {
+    line-height: 85px;
+}
+
+.experience-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-item {
+    width: 265px;
+    height: 432px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 22px;
+    color: var(--color-light);
+    overflow: hidden;
+}
+
+.experience-item:nth-child(1) {
+    background: linear-gradient(var(--color-dark) 5%, transparent), url('images/v1_108.png');
+}
+
+.experience-item:nth-child(2) {
+    background: linear-gradient(var(--color-dark) 5%, transparent), url('images/v1_111.png');
+}
+
+.experience-item:nth-child(3) {
+    background: linear-gradient(var(--color-dark) 5%, transparent), url('images/v1_114.png');
+}
+
+.experience-item:nth-child(4) {
+    background: linear-gradient(var(--color-dark) 5%, transparent), url('images/v1_117.png');
+}
+
+.experience-item p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.benefit-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 50px;
+    padding: 70px 100px;
+    background-color: var(--color-background-grey);
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: var(--color-light);
+    border-radius: 10px;
+}
+
+.proposal-header {
+    color: var(--color-dark-grey);
+    line-height: 30px;
+}
+
+.proposal-text {
+    color: var(--color-light-grey);
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.additional-block {
+    background-color: transparent;
+}
+
+.emphasis-block {
+    background-color: var(--color-emphasis);
+
+    & * {
+        color: var(--color-light);
+    }
+}
+
+.team-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    padding: 50px 100px;
+
+    & * {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.photos {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.photos img{
+    border-radius: 10px;
+}
+
+#photo1 {
+    width: 291px;
+}
+
+#photo2 {
+    width: 323px;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+}
+
+.button {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 25px;
+    margin: 15px 30px 0 0;
+    word-wrap: nowrap;
+    font: 500 18px 'Poppins', sans-serif;
+}
+
+.button-white {
+    border-color: var(--color-light);
+    color: var(--color-dark)
+}
+
+.button-black {
+    background-color: var(--color-dark);
+    color: var(--color-light)
+}
+
+.service-section {
+    padding: 50px 100px;
+}
+
+.central-header {
+    text-align: center;
+    
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-grid-column {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.service-item {
+    padding-top: 100px;
+}
+
+.solar {
+    background: no-repeat url('images/solar.png') top 20px left 20px, var(--color-background-grey);
+}
+
+.cable {
+    background: no-repeat url('images/cable.png') top 20px left 20px, var(--color-background-grey);
+}
+
+.promo {
+    background: no-repeat url('images/promo.png') top 20px left 20px, var(--color-background-grey);
+}
+
+.support {
+    background: no-repeat url('images/support.png') top 20px left 20px, var(--color-background-grey);
+}
+
+.service-info-img {
+    justify-self: center;
+    align-self: center;
+    background: no-repeat center url('images/v1_138.png');
+    width: 352px;
+    height: 446px;
+    border-radius: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    row-gap: 25px;
+    background-color: var(--color-dark);
+    font: 300 16px 'Roboto', sans-serif;
+    line-height: 30px;
+    color: var(--color-light);
+
+    & h4, .logo {
+        margin-bottom: 25px;
+    }
+
+    & li {
+        font-weight: 300;
+        line-height: 35px;
+    }
+}
+
+.summary {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    padding: 50px 100px;
+    font-size: 18px;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.company {
+    padding: 100px 30px 0 100px;
+    border-right: 1px solid var(--color-light);
+}
+
+.footer-list-block {
+    padding: 150px 25px;
+    border-right: 1px solid var(--color-light);
+    font-weight: 300;
+}
+
+.contacts {
+    padding: 150px 100px 0 25px;
+    font-weight: 300;
+}
+
+.copyrights {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    text-align: center;
+    padding: 10px 100px;
+    border-top: 1px solid var(--color-light);
+}
+
+.contact {
+    line-height: 25px;
+    padding-left: 35px;
+}
+
+.contact-phone {
+    background: no-repeat url('icons/mingcute_phone-fill.png');
+}
+
+.contact-mail {
+    background: no-repeat url('icons/mdi_email.png');
+}
+
+.contact-facebook{
+    background: no-repeat url('icons/ri_facebook-fill.png');
+}
+
+.contact-twitter {
+    background: no-repeat url('icons/bi_twitter.png');
+}
+
+.contact-instagram {
+    background: no-repeat url('icons/ri_instagram-fill.png');
+}
